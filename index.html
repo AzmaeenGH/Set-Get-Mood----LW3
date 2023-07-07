@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.ethers.io/lib/ethers-5.7.2.umd.min.js" type="application/javascript"></script>
+    <script src="./script.js"></script>
+    <title>LearnWeb3 First dApp</title>
+</head>
+
+<body>
+    <div>
+        <h1>This is my dApp! </h1>
+        <h4>Here we can set or get the mood:</h4>
+        <label for="mood">
+            <i>STEPS:
+                <br>Set the Mood by clicking on the 'Set Mood' button. After the mood has been set, use the 'Get
+                Mood'button to retrieve it
+            </i>
+            <br><br><br>
+            Input Mood:
+        </label> <br>
+        <input type="text" id="mood" />
+        <button onclick="setMood()">Set Mood</button>
+        <button onclick="getMood()">Get Mood</button>
+        <p id="showMood"></p>
+    </div>
+</body>
+
+</html>
